@@ -6,7 +6,7 @@ const route=require("./route/route");
 
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://bittushri8224:lyNrXnwy17jk4lFa@cluster0.ii3dqef.mongodb.net/group61",
+mongoose.connect("mongodb+srv://Adesh:LnDEhxK0maoDwQD9@cluster0.r3pzigx.mongodb.net/group54Database",
 {
     useNewUrlParser:true
 }
@@ -14,6 +14,7 @@ mongoose.connect("mongodb+srv://bittushri8224:lyNrXnwy17jk4lFa@cluster0.ii3dqef.
 
 .then(()=>console.log(" mongoDB is connected"))
 .catch((err)=>console.log(err))
+
 app.use('/',route)
 
 app.listen(process.env.PORT || 3000, function(){
